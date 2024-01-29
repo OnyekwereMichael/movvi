@@ -20,20 +20,17 @@ nav {
   justify-content: space-between;
 }
 
-.search-div-sub {
-  /* display: flex;
-  align-items: center; */
-}
 
 input[type="search"] {
   padding: 8px;
   margin-right: 10px;
 }
-
-.nav-details-icon img {
-  /* cursor: pointer;
-  margin-left: 10px; */
+img{
+  width: 30px;
+  padding: 20px;
 }
+
+
 
 
 

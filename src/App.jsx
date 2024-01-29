@@ -77,12 +77,12 @@ function Home() {
                     <div className="sub-nav-details-search">
                         <div className="search-div-sub">
                             <input value={searchTerm} onChange={handleChange} type="search" placeholder="search..." />
-                            <img src=".\img\search.s" alt="" onClick={searchMovies} />
+                            <img src={icon}alt="" onClick={searchMovies} />
                         </div>
                     </div>
 
                     <div className="nav-details-icon">
-                        <img src=".\img\notify.svg" alt="" onClick={searchMovies} />
+                        <img src=".\img\notify.svg" alt="" onClick={searchMovies} className="image"/>
                     </div>
                 </div>
             </nav>
