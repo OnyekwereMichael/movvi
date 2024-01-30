@@ -12,6 +12,13 @@ import { BiMenuAltRight } from "react-icons/bi";
 // import TopMovie from "../component/top-movies";
 
 function Home() {
+  const [Menuopen, setMenuopen] = useState(false);
+  const getMenuStyles = (Menuopen) => {
+    if (document.documentElement.clientWidth <= 800) {
+      return { top: !Menuopen && "-100%" };
+    }
+  };
+
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [randomMovie, setRandomMovie] = useState(null);
@@ -100,9 +107,18 @@ function Home() {
           <a href="">Sign In</a>
           <a href="">Log in</a>
         </div>
-
+        
+       
         <BiMenuAltRight size={50} className="bi"/>
+     
       </section>
+
+
+      <div className="sign_lo" 
+        style={getMenuStyles(Menuopen)}>
+          <a href="">Sign In</a>
+          <a href="">Log in</a>
+        </div>
 
       <div className="featured">
         {movies.length > 0 ? (

@@ -78,7 +78,8 @@ button a {
   text-decoration: none;
   color: black;
   font-weight: 700;
-  animation: text 3s 3s ease-in-out infinite;
+  font-family: Poppins;
+  animation: text 5s 5s ease-in-out infinite forwards;
 }
 input[type="search"] {
   background-color: transparent;
@@ -138,8 +139,16 @@ img {
     color: green;
     font-weight: bold;
   }
+
+  100%{
+      color: black;
+    font-weight: bold;
+  }
 }
 
+.sign_lo{
+  display: none;
+}
 footer {
   color: #fff;
   padding: 20px;
@@ -172,6 +181,10 @@ hr {
 
 .bi{
    display: none;    
+}
+
+.sign_lo{
+  background-color: red;
 }
 
 @media screen and (max-width: 600px) {
@@ -213,4 +226,5 @@ hr {
   .bi{
     display: block;
   }
+
 }
