@@ -170,6 +170,10 @@ hr {
   border-color: #555;
 }
 
+.bi{
+   display: none;    
+}
+
 @media screen and (max-width: 600px) {
   .featured{
     grid-template-columns: 1fr;
@@ -205,5 +209,8 @@ hr {
   }
   hr {
     margin-top: 20px;
+  }
+  .bi{
+    display: block;
   }
 }

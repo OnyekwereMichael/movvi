@@ -100,6 +100,8 @@ function Home() {
           <a href="">Sign In</a>
           <a href="">Log in</a>
         </div>
+
+        <BiMenuAltRight size={50} className="bi"/>
       </section>
 
       <div className="featured">
