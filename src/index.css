@@ -170,7 +170,11 @@ hr {
   border-color: #555;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+  .featured{
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
   input[type="search"] {
     width: 140px;
   }
