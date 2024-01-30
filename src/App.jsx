@@ -8,6 +8,7 @@ import facebook from "../src/facebook.png";
 import twitter from "../src/twitter.png";
 import instagram from "../src/instagram.png";
 import youtube from "../src/youtube.png";
+import { BiMenuAltRight } from "react-icons/bi";
 // import TopMovie from "../component/top-movies";
 
 function Home() {
