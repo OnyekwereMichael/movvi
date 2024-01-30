@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700&family=Public+Sans:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,800;1,900&family=Public+Sans:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +10,16 @@ body {
 
 .overall {
   background-color: #000;
-  padding: 20px;
+  padding: 10px;
+ 
+
+}
+.overall_two{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 0 20px;
 }
 
 nav {
@@ -18,21 +31,48 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: black; 
+  max-width: 700px; 
+  backdrop-filter: blur(4px) saturate(180px);
+  color: #fff; 
+  /* margin-left: -3px; */
+}
+.nav button{
+  background-color: #58629b;
 }
 
-
+button{
+ background-color: #af5105;
+ padding: 5px 13px;
+ border: none;
+ outline: none;
+}
+button a{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+animation: text 3s 3s ease-in-out infinite;
+}
 input[type="search"] {
-  padding: 8px;
   margin-right: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 300px;
+  color: #fff;
+}
+.butt_1{
+  border: none;
+  outline: none;
 }
 img{
   width: 30px;
 }
-
-
-
-
-
+.sign_log a{
+ margin-left: 50px;
+ color: #fff;
+ text-decoration: none;
+}
 
 
 .featured {
@@ -45,10 +85,12 @@ img{
  width: 100%;
 }
 .featured p{
- color: #fff
+ color: #fff;
+ font-family: Poppins;
 }
 .featured h2{
- color: #fff
+ color: #fff;
+ font-family: Orbitron;
 }
 
 .Movie {
@@ -56,4 +98,77 @@ img{
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes text {
+  0% {
+      color: black;
+      font-weight: bold;
+  }
+
+  30% {
+    color: red;
+    font-weight: bold;
+  }
+
+  85% {
+    color: green;
+    font-weight: bold;
+  }
+}
+
+
+/* Add this CSS in your stylesheet or in a style tag in your component */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  width: 40px; /* Adjust the size as needed */
+}
+
+.footer-links a {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  /* Add styles for social media icons or links */
+}
+
+/* Add more styles as needed */
+
+
+
+@media screen and (max-width: 500px) {
+  input[type="search"] {
+  width: 140px;
+  }
+  img{
+    width: 10px;
+  }
+
+  .sign_log a{
+    display: none;
+  }
+
+  .movieicon{
+    min-width: 30px;
+  }
 }

@@ -3,6 +3,7 @@ import TopMovie from "./component/topmovies";
 import { useEffect, useState } from "react";
 import axios from 'axios'
 import icon from "../src/iconer.png"
+import movieicon from "../src/movieicon.jpg"
 // import TopMovie from "../component/top-movies";
 
 function Home() {
@@ -72,21 +73,28 @@ function Home() {
 
     return (
         <div className="overall">
+            <section className="overall_two">
+             <div>
+                     <img src={movieicon} alt="" className="movieicon"  sizes={40}/>
+                </div>
             <nav>
                 <div className="nav">
                     <div className="sub-nav-details-search">
                         <div className="search-div-sub">
-                            <input value={searchTerm} onChange={handleChange} type="search" placeholder="search..." />
+                            <input value={searchTerm} onChange={handleChange} type="search" placeholder="what do you want to watch" />
+                            <button className="butt_1">
                             <img src={icon}alt="" onClick={searchMovies} />
+                            </button>
                         </div>
-                    </div>
-
-                    <div className="nav-details-icon">
-                        <img src=".\img\notify.svg" alt="" onClick={searchMovies} className="image"/>
                     </div>
                 </div>
             </nav>
 
+            <div className="sign_log">
+                 <a href="">Sign In</a>
+                 <a href="">Log in</a>
+            </div>
+            </section>
 
 
             <div className="featured">
@@ -98,6 +106,22 @@ function Home() {
                     <p>No movies found</p>
                 )}
             </div>
+
+            <footer className="footer">
+                <div className="footer-content">
+                    <div className="footer-logo">
+                        <img src={movieicon} alt="Movie Icon" className="movieicon" sizes={40} />
+                    </div>
+                    <div className="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div className="footer-social">
+                        {/* Add social media icons or links here */}
+                    </div>
+                </div>
+            </footer>
         </div>
     )
 }
